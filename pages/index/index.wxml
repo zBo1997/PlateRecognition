@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+<button type="primary"
+bindtap="takePhoto">拍照</button>
+<view class="result">预览</view>
+<view >识别车牌：</view>
+<text>{{platNo}}</text>
+<image mode="widthFix" src="{{src}}"></image>
+</view>
